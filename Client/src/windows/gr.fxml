@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="430.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.grController">
+   <children>
+      <ImageView fitHeight="474.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <LineChart fx:id="LineChart" animated="false" layoutX="69.0" layoutY="33.0" prefHeight="334.0" prefWidth="644.0" title="LineChart">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis animated="false" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

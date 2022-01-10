@@ -1,0 +1,44 @@
+// User.table
+
+CREATE TABLE `user` (
+   `ID` int NOT NULL,
+   `LOGIN` varchar(45) NOT NULL,
+   `PASSWORD` varchar(45) NOT NULL,
+   `EMAIL` varchar(45) NOT NULL,
+   `PHONENUMBER` varchar(45) NOT NULL,
+   PRIMARY KEY (`ID`,`LOGIN`,`PASSWORD`),
+   UNIQUE KEY `ID_UNIQUE` (`ID`),
+   UNIQUE KEY `LOGIN_UNIQUE` (`LOGIN`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+// Request table
+
+CREATE TABLE `request` (
+   `REQUESTID` int NOT NULL,
+   `USERFULLNAME` varchar(45) NOT NULL,
+   `INCOME` varchar(45) NOT NULL,
+   `CREDITSUM` varchar(45) NOT NULL,
+   `TIME` varchar(45) NOT NULL,
+   `TARGET` varchar(60) NOT NULL,
+   `BENEFIT` varchar(45) NOT NULL,
+   `ORDERCONDITION` varchar(45) NOT NULL,
+   `ID` int NOT NULL,
+   PRIMARY KEY (`REQUESTID`),
+   UNIQUE KEY `REQUESTID_UNIQUE` (`REQUESTID`),
+   KEY `FK_request_user_idx` (`ID`),
+   CONSTRAINT `request_ibfk_1` FOREIGN KEY (`ID`) REFERENCES `user` (`ID`) ON DELETE CASCADE
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+// Userinform table
+
+use  bankdb;
+CREATE TABLE `userinform` (
+  `USURNAME` varchar(45) NOT NULL,
+  `UNAME` varchar(45) NOT NULL,
+  `UPATRONYMIC` varchar(45) NOT NULL,
+  `ID` int NOT NULL,
+  PRIMARY KEY (`USURNAME`),
+  UNIQUE KEY `USURNAME_UNIQUE` (`USURNAME`),
+  KEY `FK_userinform_user_idx` (`ID`),
+  CONSTRAINT `userinform_idfk_1` FOREIGN KEY (`ID`) REFERENCES `user` (`ID`) ON DELETE CASCADE)
+  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci 

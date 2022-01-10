@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reportController">
+   <children>
+      <ImageView fitHeight="430.0" fitWidth="908.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="699.0" layoutX="101.0" layoutY="74.0" startX="-100.0" />
+      <TableView fx:id="UsersTable" layoutX="37.0" layoutY="97.0" prefHeight="310.0" prefWidth="728.0">
+        <columns>
+            <TableColumn fx:id="ColumnID" editable="false" prefWidth="132.80005264282227" text="Индекс пользователя" />
+          <TableColumn fx:id="ColumnLogin" editable="false" prefWidth="111.99998474121094" text="Логин" />
+            <TableColumn fx:id="ColumnPassword" editable="false" minWidth="0.0" prefWidth="120.0" text="Пароль" />
+            <TableColumn fx:id="ColumnEmail" editable="false" minWidth="0.0" prefWidth="198.4000244140625" text="Электронная почта" />
+            <TableColumn fx:id="ColumnPhoneNumber" editable="false" prefWidth="167.0" text="Номер телефона" />
+        </columns>
+      </TableView>
+      <Label fx:id="FirstName" alignment="CENTER" layoutX="-1.0" layoutY="7.0" prefHeight="38.0" prefWidth="800.0" text="Ипотечный банк" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

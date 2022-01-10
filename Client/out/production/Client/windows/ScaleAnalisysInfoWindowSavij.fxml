@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="786.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SAWSController">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="772.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="448.0" fitWidth="770.0" layoutX="1.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="67.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Матрица для Критерия Сэвиджа с вариантом наличия у клиента льгот" textAlignment="CENTER" wrappingWidth="207.23785400390625" />
+      <Text layoutX="401.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Матрица для Критерия Сэвиджа с вариантом отсутствия у клиента льгот" textAlignment="CENTER" wrappingWidth="213.579345703125" />
+      <Text layoutX="124.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" />
+      <Text layoutX="176.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" />
+      <Text layoutX="227.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B3" />
+      <Text layoutX="84.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1" />
+      <Text layoutX="84.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2" />
+      <Text layoutX="84.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3" />
+      <Text layoutX="466.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" />
+      <Text layoutX="518.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" />
+      <Text layoutX="569.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B3" />
+      <Text layoutX="426.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1" />
+      <Text layoutX="426.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2" />
+      <Text layoutX="426.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3" />
+      <TextField fx:id="Z111" disable="true" layoutX="111.0" layoutY="140.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z121" disable="true" layoutX="163.0" layoutY="140.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z131" disable="true" layoutX="214.0" layoutY="140.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z211" disable="true" layoutX="112.0" layoutY="179.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z221" disable="true" layoutX="164.0" layoutY="179.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z231" disable="true" layoutX="215.0" layoutY="179.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z311" disable="true" layoutX="112.0" layoutY="216.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z321" disable="true" layoutX="164.0" layoutY="216.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z331" disable="true" layoutX="215.0" layoutY="216.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z112" disable="true" layoutX="453.0" layoutY="149.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z122" disable="true" layoutX="505.0" layoutY="149.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z132" disable="true" layoutX="556.0" layoutY="149.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z212" disable="true" layoutX="454.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z222" disable="true" layoutX="506.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z232" disable="true" layoutX="557.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z312" disable="true" layoutX="454.0" layoutY="225.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z322" disable="true" layoutX="506.0" layoutY="225.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z332" disable="true" layoutX="557.0" layoutY="225.0" prefHeight="25.0" prefWidth="39.0" />
+      <Button fx:id="okButton" layoutX="330.0" layoutY="263.0" mnemonicParsing="false" onAction="#analisys" text="Принять" />
+      <Text layoutX="20.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Решение для критерия Сэвиджа вариантом наличия у клиента льгот" textAlignment="CENTER" wrappingWidth="207.2378540039062" />
+      <TextField fx:id="W" disable="true" layoutX="70.0" layoutY="655.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="470.0" layoutY="622.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Решение для критерия Сэвиджа с вариантом Остутствия у клиента льгот" textAlignment="CENTER" wrappingWidth="213.57934570312477" />
+      <TextField fx:id="E" disable="true" layoutX="529.0" layoutY="655.0" prefHeight="25.0" prefWidth="102.0" />
+      <Button fx:id="okButton1" alignment="TOP_CENTER" layoutX="270.0" layoutY="419.0" mnemonicParsing="false" onAction="#risk" prefHeight="32.0" prefWidth="171.0" text="Построить матрицу рисков" textAlignment="CENTER" />
+      <Text layoutX="74.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" />
+      <Text layoutX="137.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" />
+      <Text layoutX="200.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B3" />
+      <Text layoutX="22.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1" />
+      <Text layoutX="22.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2" />
+      <Text layoutX="22.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3" />
+      <TextField fx:id="Z113" disable="true" layoutX="51.0" layoutY="484.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z123" disable="true" layoutX="116.0" layoutY="484.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z133" disable="true" layoutX="182.0" layoutY="484.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z213" disable="true" layoutX="51.0" layoutY="523.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z223" disable="true" layoutX="117.0" layoutY="523.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z233" disable="true" layoutX="183.0" layoutY="523.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z313" disable="true" layoutX="51.0" layoutY="560.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z323" disable="true" layoutX="117.0" layoutY="560.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z333" disable="true" layoutX="183.0" layoutY="560.0" prefHeight="26.0" prefWidth="54.0" />
+      <Text layoutX="549.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" />
+      <Text layoutX="601.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" />
+      <Text layoutX="652.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B3" />
+      <Text layoutX="469.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1" />
+      <Text layoutX="469.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2" />
+      <TextField fx:id="Z114" disable="true" layoutX="510.0" layoutY="474.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z124" disable="true" layoutX="577.0" layoutY="474.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z134" disable="true" layoutX="643.0" layoutY="474.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z214" disable="true" layoutX="511.0" layoutY="513.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z224" disable="true" layoutX="578.0" layoutY="513.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z234" disable="true" layoutX="644.0" layoutY="513.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z314" disable="true" layoutX="511.0" layoutY="550.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z324" disable="true" layoutX="578.0" layoutY="550.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="Z334" disable="true" layoutX="644.0" layoutY="550.0" prefHeight="26.0" prefWidth="54.0" />
+      <Text layoutX="492.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N1" />
+      <Text layoutX="492.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N3" />
+      <TextField fx:id="E1" disable="true" layoutX="518.0" layoutY="287.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="E2" disable="true" layoutX="518.0" layoutY="324.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="E3" disable="true" layoutX="518.0" layoutY="359.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="492.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N2" />
+      <Text layoutX="73.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N1" />
+      <Text layoutX="73.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N3" />
+      <TextField fx:id="W1" disable="true" layoutX="99.0" layoutY="287.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="W2" disable="true" layoutX="99.0" layoutY="324.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="W3" disable="true" layoutX="99.0" layoutY="359.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="73.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N2" />
+      <Text layoutX="268.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W1" />
+      <Text layoutX="268.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W3" />
+      <TextField fx:id="W11" disable="true" layoutX="292.0" layoutY="479.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="W22" disable="true" layoutX="292.0" layoutY="516.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="W33" disable="true" layoutX="292.0" layoutY="551.0" prefHeight="26.0" prefWidth="54.0" />
+      <Text layoutX="268.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W2" />
+      <Text layoutX="369.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W1" />
+      <Text layoutX="369.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W3" />
+      <TextField fx:id="E11" disable="true" layoutX="393.0" layoutY="477.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="E22" disable="true" layoutX="393.0" layoutY="514.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="E33" disable="true" layoutX="393.0" layoutY="549.0" prefHeight="26.0" prefWidth="54.0" />
+      <Text layoutX="369.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W2" />
+      <Text layoutX="27.0" layoutY="712.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наилучшим решением будет кредитовать клиента под процентную ставку:" textAlignment="CENTER" wrappingWidth="233.63781738281244" />
+      <Text layoutX="401.0" layoutY="712.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наилучшим решением будет кредитовать клиента под процентную ставку:" textAlignment="CENTER" wrappingWidth="233.63781738281244" />
+      <TextField fx:id="WP" disable="true" layoutX="264.0" layoutY="703.0" prefHeight="26.0" prefWidth="54.0" />
+      <TextField fx:id="EP" disable="true" layoutX="655.0" layoutY="702.0" prefHeight="26.0" prefWidth="54.0" />
+      <Text layoutX="469.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3" />
+   </children>
+</AnchorPane>

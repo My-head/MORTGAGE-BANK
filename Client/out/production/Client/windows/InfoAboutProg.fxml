@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="70.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вы используете Программное средство для выбора бюждета кредитования в ипотечном банке . Данный продукт создал студент группы 972302 Михед В. И." wrappingWidth="194.28282165527344" />
+   </children>
+</AnchorPane>

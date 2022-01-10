@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="430.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AOWController">
+   <children>
+      <ImageView fitHeight="474.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="699.0" layoutX="101.0" layoutY="74.0" startX="-100.0" />
+      <AnchorPane layoutX="60.0" layoutY="86.0" prefHeight="43.0" prefWidth="214.0" style="-fx-background-color: #cbccc1;" />
+      <Button fx:id="SendButton" layoutX="150.0" layoutY="384.0" mnemonicParsing="false" onAction="#SendDataAboutOrder" prefHeight="25.0" prefWidth="150.0" text="Оформить анкету" />
+      <TextField fx:id="NameField" layoutX="151.0" layoutY="147.0" onDragDetected="#ReturnName" />
+      <Text layoutX="6.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия, Имя, Отчество:" />
+      <TextField fx:id="IncomeField" layoutX="152.0" layoutY="214.0" onDragDetected="#ReturnIncome" prefHeight="25.0" prefWidth="69.0" />
+      <Text layoutX="21.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Срок кредитования: " />
+      <ChoiceBox fx:id="PhysicalChoise" layoutX="151.0" layoutY="180.0" onDragDetected="#ReturnTime" prefWidth="150.0" />
+      <Text layoutX="30.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Годовой доход:" />
+      <Text layoutX="24.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сумма кредитования:" />
+      <TextField fx:id="CreditsumField" layoutX="152.0" layoutY="247.0" onDragDetected="#ReturnCreditsum" prefHeight="25.0" prefWidth="69.0" />
+      <ChoiceBox fx:id="IncomeTypeChoice" layoutX="226.0" layoutY="214.0" onDragDetected="#ReturnIncomeType" prefHeight="25.0" prefWidth="75.0" />
+      <ChoiceBox fx:id="CreditsumTypeChoice" layoutX="226.0" layoutY="247.0" onDragDetected="#ReturnCreditsumType" prefHeight="25.0" prefWidth="75.0" />
+      <Text layoutX="66.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цель:" />
+      <ChoiceBox fx:id="TypeChoice" layoutX="152.0" layoutY="281.0" onDragDetected="#ReturnType" prefWidth="150.0" />
+      <Text layoutX="34.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Право на льготы:" />
+      <CheckBox fx:id="BenefitBox" layoutX="174.0" layoutY="316.0" mnemonicParsing="false" onAction="#ReturnBenefit" prefHeight="17.0" prefWidth="69.0" text="Да" />
+      <Text layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Официальое трудоустройство:" />
+      <CheckBox fx:id="ConditionBox" layoutX="174.0" layoutY="340.0" mnemonicParsing="false" onAction="#ReturnCondition" prefHeight="17.0" prefWidth="69.0" text="Да" />
+      <ImageView fitHeight="344.0" fitWidth="459.0" layoutX="331.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@OrdernieDela.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="FirstName" alignment="CENTER" layoutX="-1.0" layoutY="8.0" prefHeight="38.0" prefWidth="802.0" text="Ипотечный банк">
+         <font>
+            <Font name="Arial Black" size="33.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="22.0" layoutY="82.0" prefHeight="50.0" prefWidth="290.0" text="СОЗДАНИЕ АНКЕТЫ" textFill="#ff2d11">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="InfarmationAboutPrivilegesButton" layoutX="659.0" layoutY="33.0" mnemonicParsing="false" onAction="#OpenInfoAboutPrivileges" prefHeight="30.0" prefWidth="99.0" text="Список льгот" />
+   </children>
+</AnchorPane>

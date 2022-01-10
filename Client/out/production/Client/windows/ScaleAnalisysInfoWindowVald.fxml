@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="619.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SAWVController">
+   <children>
+      <ImageView fitHeight="465.0" fitWidth="711.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="382.0" fitWidth="711.0" layoutX="6.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhiteBackground.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="67.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Матрица для Критерия Вальда с вариантом наличия у клиента льгот" textAlignment="CENTER" wrappingWidth="207.23785400390625" />
+      <Text layoutX="401.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Матрица для Критерия Вальда с вариантом отсутствия у клиента льгот" textAlignment="CENTER" wrappingWidth="213.579345703125" />
+      <Text layoutX="124.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" />
+      <Text layoutX="176.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" />
+      <Text layoutX="227.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B3" />
+      <Text layoutX="84.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1" />
+      <Text layoutX="84.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2" />
+      <Text layoutX="84.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3" />
+      <Text layoutX="466.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B1" />
+      <Text layoutX="518.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B2" />
+      <Text layoutX="569.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B3" />
+      <Text layoutX="426.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A1" />
+      <Text layoutX="426.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A2" />
+      <Text layoutX="426.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A3" />
+      <TextField fx:id="Z111" disable="true" layoutX="111.0" layoutY="140.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z121" disable="true" layoutX="163.0" layoutY="140.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z131" disable="true" layoutX="214.0" layoutY="140.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z211" disable="true" layoutX="112.0" layoutY="179.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z221" disable="true" layoutX="164.0" layoutY="179.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z231" disable="true" layoutX="215.0" layoutY="179.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z311" disable="true" layoutX="112.0" layoutY="216.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z321" disable="true" layoutX="164.0" layoutY="216.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z331" disable="true" layoutX="215.0" layoutY="216.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z112" disable="true" layoutX="453.0" layoutY="149.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z122" disable="true" layoutX="505.0" layoutY="149.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z132" disable="true" layoutX="556.0" layoutY="149.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z212" disable="true" layoutX="454.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z222" disable="true" layoutX="506.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z232" disable="true" layoutX="557.0" layoutY="188.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z312" disable="true" layoutX="454.0" layoutY="225.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z322" disable="true" layoutX="506.0" layoutY="225.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="Z332" disable="true" layoutX="557.0" layoutY="225.0" prefHeight="25.0" prefWidth="39.0" />
+      <Button fx:id="okButton" layoutX="327.0" layoutY="263.0" mnemonicParsing="false" onAction="#analisys" text="Принять" />
+      <Text layoutX="106.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М1" />
+      <Text layoutX="106.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М3" />
+      <Text layoutX="72.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Решение для критерия Вальдас вариантом наличия у клиента льгот" textAlignment="CENTER" wrappingWidth="207.2378540039062" />
+      <TextField fx:id="W1" disable="true" layoutX="132.0" layoutY="263.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="W2" disable="true" layoutX="132.0" layoutY="300.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="W3" disable="true" layoutX="132.0" layoutY="335.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="106.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М2" />
+      <Text layoutX="448.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М1" />
+      <Text layoutX="448.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М3" />
+      <TextField fx:id="E1" disable="true" layoutX="474.0" layoutY="262.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="E2" disable="true" layoutX="474.0" layoutY="299.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="E3" disable="true" layoutX="474.0" layoutY="334.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="448.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="М2" />
+      <TextField fx:id="W" disable="true" layoutX="131.0" layoutY="462.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="412.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Решение для критерия Вальда с вариантом Остутствия у клиента льгот" textAlignment="CENTER" wrappingWidth="213.57934570312477" />
+      <TextField fx:id="E" disable="true" layoutX="471.0" layoutY="462.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="WP" disable="true" layoutX="131.0" layoutY="578.0" prefHeight="25.0" prefWidth="102.0" />
+      <TextField fx:id="EP" disable="true" layoutX="471.0" layoutY="578.0" prefHeight="25.0" prefWidth="102.0" />
+      <Text layoutX="72.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наилучшим решением будет кредитовать клиента под процентную ставку:" textAlignment="CENTER" wrappingWidth="233.63781738281244" />
+      <Text layoutX="388.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наилучшим решением будет кредитовать клиента под процентную ставку:" textAlignment="CENTER" wrappingWidth="233.63781738281244" />
+   </children>
+</AnchorPane>
