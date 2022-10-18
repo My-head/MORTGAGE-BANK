@@ -3,5 +3,5 @@
 ![JavaFX](https://img.shields.io/badge/javaFX-brightgreen.svg)
 
 This app represents software tool for selecting a loan budget in a mortgage bank.
-Here you can find a quality client-server application written on JAVA language using JDBS technologies for connecting to a database.
+Here you can find a quality client-server application written on JAVA language using JDBC technologies for connecting to a database.
 
